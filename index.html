@@ -112,24 +112,36 @@
   }
   .engage-name { font-size: 13px; font-weight: 700; margin-bottom: 5px; }
   .engage-desc { font-size: 11px; opacity: 0.85; line-height: 1.4; }
-  .proof-row { display: grid; grid-template-columns: 1.2fr 1fr; gap: 18px; align-items: stretch; }
+  .proof-row { display: grid; grid-template-columns: 2fr 1fr; gap: 18px; align-items: start; }
   .proof-stats { background: #f7f8fb; border-radius: 6px; padding: 16px; }
-  .proof-stats-title { font-size: 12px; font-weight: 700; color: #1a2138; margin-bottom: 10px; }
+  .proof-stats-title { font-size: 11px; font-weight: 700; color: #6b7591; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
   .stat-row {
     display: flex;
     justify-content: space-between;
-    padding: 6px 0;
+    padding: 5px 0;
     border-bottom: 1px dashed #d8dde6;
-    font-size: 12px;
+    font-size: 11.5px;
   }
   .stat-row:last-child { border-bottom: none; }
   .stat-label { color: #4b5775; }
   .stat-val { font-weight: 700; color: #1a2138; }
   .trusted { background: #f7f8fb; border-radius: 6px; padding: 16px; }
-  .trusted-title { font-size: 12px; font-weight: 700; color: #1a2138; margin-bottom: 10px; }
+  .trusted-title { font-size: 14px; font-weight: 700; color: #1a2138; margin-bottom: 12px; }
   .trusted-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .trusted-item { font-size: 11px; color: #4b5775; }
-  .trusted-item strong { display: block; color: #1a2138; font-size: 12px; }
+  .trusted-item { font-size: 11px; color: #4b5775; line-height: 1.35; }
+  .trusted-item strong { display: block; color: #1a2138; font-size: 12.5px; }
+  .upcoming-badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 600;
+    color: #8b5cf6;
+    background: #ede9fe;
+    padding: 1px 6px;
+    border-radius: 8px;
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
   .footer {
     background: #1a2138;
     color: white;
@@ -164,7 +176,7 @@
 
   <div class="hero">
     <h1>The <span class="accent">Regulated Crypto Infrastructure</span><br>Layer for Financial Institutions in the EU</h1>
-    <p class="subtitle">MiCAR- and MiFID-licensed trading and custody infrastructure &mdash; built so banks, brokers, and fintechs can offer crypto products to their clients without taking on regulatory, liquidity, or custody risk themselves.</p>
+    <p class="subtitle">MiCAR- and MiFID-licensed trading and custody infrastructure &mdash; built so banks, brokers, and fintechs can offer crypto products to their clients without taking on regulatory, liquidity, or custody risk themselves. We are custodian agnostic and work closely with Zodia Custody as our preferred partner for institutional clients.</p>
   </div>
 
   <div class="credentials">
@@ -181,12 +193,12 @@
       <span class="cred-label">Regulated</span>
     </div>
     <div class="cred">
-      <span class="cred-value">[30]</span>
+      <span class="cred-value">30</span>
       <span class="cred-label">EU Countries Live</span>
     </div>
     <div class="cred">
-      <span class="cred-value">&euro;[XX]B+</span>
-      <span class="cred-label">Historical Volume</span>
+      <span class="cred-value">&euro;1B+ p.m.</span>
+      <span class="cred-label">Trading Volume</span>
     </div>
   </div>
 
@@ -203,7 +215,7 @@
       </div>
       <div class="pillar">
         <p class="pillar-title">Custodian Agnostic</p>
-        <p class="pillar-desc">Use DLT Finance custody out of the box, or bring your own (Zodia, Fireblocks, BitGo). Your client, your choice.</p>
+        <p class="pillar-desc">Bring your own custodian or use ours. We work closely with Zodia Custody as our preferred partner for institutional clients — giving you a proven, regulated setup from day one.</p>
       </div>
     </div>
   </div>
@@ -230,14 +242,15 @@
           <span class="block-tag">Custody Required for Collateral Mgmt</span>
         </div>
         <ul>
-          <li>Up to [XX]x leverage on major pairs</li>
+          <li>Up to 20x leverage for retail clients</li>
+          <li>Unlimited leverage for professional clients</li>
           <li>Crypto-collateralised margin model</li>
           <li>Real-time risk &amp; liquidation engine</li>
           <li>Custody integrated for collateral handling</li>
           <li>Designed to stack on top of CFD/brokerage flows</li>
         </ul>
         <div class="underlyings">
-          <strong>Underlyings:</strong> Equities &middot; ETFs &middot; Commodities &middot; Precious Metals &middot; Currencies
+          <strong>Available asset classes and trading pairs:</strong> Equities &middot; ETFs &middot; Commodities &middot; Precious Metals &middot; Currencies
         </div>
       </div>
     </div>
@@ -264,24 +277,35 @@
   <div class="section">
     <h2 class="section-title">Track Record</h2>
     <div class="proof-row">
-      <div class="proof-stats">
-        <div class="proof-stats-title">By the Numbers</div>
-        <div class="stat-row"><span class="stat-label">Historical trade volume</span><span class="stat-val">&euro;[XX]B+</span></div>
-        <div class="stat-row"><span class="stat-label">EU/EEA countries passported</span><span class="stat-val">[30]</span></div>
-        <div class="stat-row"><span class="stat-label">Years operating</span><span class="stat-val">[XX]</span></div>
-        <div class="stat-row"><span class="stat-label">Institutional clients live</span><span class="stat-val">[XX]+</span></div>
-        <div class="stat-row"><span class="stat-label">Crypto assets supported</span><span class="stat-val">[XXX]+</span></div>
-      </div>
       <div class="trusted">
         <div class="trusted-title">Trusted by</div>
         <div class="trusted-grid">
           <div class="trusted-item"><strong>Kraken</strong>Exchange</div>
           <div class="trusted-item"><strong>eToro</strong>Broker</div>
-          <div class="trusted-item"><strong>[Client]</strong>Bank</div>
-          <div class="trusted-item"><strong>[Client]</strong>Neobank</div>
-          <div class="trusted-item"><strong>[Client]</strong>CFD Broker</div>
-          <div class="trusted-item"><strong>[Client]</strong>Fintech</div>
+          <div class="trusted-item"><strong>Bank Frick</strong>Bank</div>
+          <div class="trusted-item"><strong>Baader Bank</strong>Bank</div>
+          <div class="trusted-item"><strong>SDX</strong>SIX Digital Exchange</div>
+          <div class="trusted-item">
+            <strong>Crypto Perp Futures Exchange</strong>
+            <span class="upcoming-badge">Launching Q3 2026</span>
+          </div>
+          <div class="trusted-item">
+            <strong>Crypto Lending Platform</strong>
+            <span class="upcoming-badge">Launching Q3 2026</span>
+          </div>
+          <div class="trusted-item">
+            <strong>EU Crypto Brokerage</strong>1.2M customers<br>
+            <span class="upcoming-badge">Launching Q3 2026</span>
+          </div>
         </div>
+      </div>
+      <div class="proof-stats">
+        <div class="proof-stats-title">By the Numbers</div>
+        <div class="stat-row"><span class="stat-label">Monthly trading volume</span><span class="stat-val">&euro;1B+</span></div>
+        <div class="stat-row"><span class="stat-label">EU/EEA countries passported</span><span class="stat-val">30</span></div>
+        <div class="stat-row"><span class="stat-label">Years operating</span><span class="stat-val">[XX]</span></div>
+        <div class="stat-row"><span class="stat-label">Institutional clients live</span><span class="stat-val">[XX]+</span></div>
+        <div class="stat-row"><span class="stat-label">Crypto assets supported</span><span class="stat-val">[XXX]+</span></div>
       </div>
     </div>
   </div>
