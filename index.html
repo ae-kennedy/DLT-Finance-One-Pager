@@ -112,22 +112,10 @@
   }
   .engage-name { font-size: 13px; font-weight: 700; margin-bottom: 5px; }
   .engage-desc { font-size: 11px; opacity: 0.85; line-height: 1.4; }
-  .proof-row { display: grid; grid-template-columns: 2fr 1fr; gap: 18px; align-items: start; }
-  .proof-stats { background: #f7f8fb; border-radius: 6px; padding: 16px; }
-  .proof-stats-title { font-size: 11px; font-weight: 700; color: #6b7591; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
-  .stat-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-    border-bottom: 1px dashed #d8dde6;
-    font-size: 11.5px;
-  }
-  .stat-row:last-child { border-bottom: none; }
-  .stat-label { color: #4b5775; }
-  .stat-val { font-weight: 700; color: #1a2138; }
+  .proof-row { display: block; }
   .trusted { background: #f7f8fb; border-radius: 6px; padding: 16px; }
   .trusted-title { font-size: 14px; font-weight: 700; color: #1a2138; margin-bottom: 12px; }
-  .trusted-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .trusted-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
   .trusted-item { font-size: 11px; color: #4b5775; line-height: 1.35; }
   .trusted-item strong { display: block; color: #1a2138; font-size: 12.5px; }
   .upcoming-badge {
@@ -176,7 +164,7 @@
 
   <div class="hero">
     <h1>The <span class="accent">Regulated Crypto Infrastructure</span><br>Layer for Financial Institutions in the EU</h1>
-    <p class="subtitle">MiCAR- and MiFID-licensed trading and custody infrastructure &mdash; built so banks, brokers, and fintechs can offer crypto products to their clients without taking on regulatory, liquidity, or custody risk themselves. We are custodian agnostic and work closely with Zodia Custody as our preferred partner for institutional clients.</p>
+    <p class="subtitle">MiCAR- and MiFID-licensed trading and custody infrastructure for banks, brokers, and fintechs. We handle the regulatory, liquidity, and custody complexity so your clients get crypto exposure and you keep the relationship. Custodian agnostic by design, with Zodia Custody as our preferred institutional partner.</p>
   </div>
 
   <div class="credentials">
@@ -207,15 +195,15 @@
     <div class="three-col">
       <div class="pillar">
         <p class="pillar-title">Riskless Principal</p>
-        <p class="pillar-desc">We sit between your client and the market on a back-to-back basis. No directional exposure, no balance sheet risk passed to you.</p>
+        <p class="pillar-desc">We sit between your client and the market on a back-to-back basis, taking no directional exposure and passing no balance sheet risk to you.</p>
       </div>
       <div class="pillar">
         <p class="pillar-title">Liquidity Agnostic</p>
-        <p class="pillar-desc">Best execution via Smart Order Routing across our venue network, or routed to any OTC desk you specifically request.</p>
+        <p class="pillar-desc">Smart Order Routing across our venue network for best execution, with the option to route to any OTC desk or LP of your choice.</p>
       </div>
       <div class="pillar">
         <p class="pillar-title">Custodian Agnostic</p>
-        <p class="pillar-desc">Bring your own custodian or use ours. We work closely with Zodia Custody as our preferred partner for institutional clients — giving you a proven, regulated setup from day one.</p>
+        <p class="pillar-desc">Bring your own custodian or use ours. For institutional clients we work closely with Zodia Custody as preferred partner, giving you a proven, regulated setup from day one.</p>
       </div>
     </div>
   </div>
@@ -229,11 +217,13 @@
           <span class="block-tag">Custody Required</span>
         </div>
         <ul>
-          <li>Support for [hundreds] of trading pairs</li>
-          <li>Best-execution Smart Order Routing</li>
-          <li>Instant settlement with end customer</li>
-          <li>Omnibus or segregated wallet structure</li>
-          <li>Hot &amp; cold MPC key security</li>
+          <li>Hundreds of trading pairs supported</li>
+          <li>Best-ex brokerage or RFQ</li>
+          <li>Acts as riskless principal on every trade</li>
+          <li>Liquidity agnostic: route to any OTC desk or LP of choice</li>
+          <li>Revenue via commission, spread, or both</li>
+          <li>In-house custody for spot settlement</li>
+          <li>MiCA custody via Zodia Custody (preferred partner)</li>
         </ul>
       </div>
       <div class="block">
@@ -247,7 +237,7 @@
           <li>Crypto-collateralised margin model</li>
           <li>Real-time risk &amp; liquidation engine</li>
           <li>Custody integrated for collateral handling</li>
-          <li>Designed to stack on top of CFD/brokerage flows</li>
+          <li>Designed to sit on top of existing CFD or brokerage flows</li>
         </ul>
         <div class="underlyings">
           <strong>Available asset classes and trading pairs:</strong> Equities &middot; ETFs &middot; Commodities &middot; Precious Metals &middot; Currencies
@@ -298,14 +288,6 @@
             <span class="upcoming-badge">Launching Q3 2026</span>
           </div>
         </div>
-      </div>
-      <div class="proof-stats">
-        <div class="proof-stats-title">By the Numbers</div>
-        <div class="stat-row"><span class="stat-label">Monthly trading volume</span><span class="stat-val">&euro;1B+</span></div>
-        <div class="stat-row"><span class="stat-label">EU/EEA countries passported</span><span class="stat-val">30</span></div>
-        <div class="stat-row"><span class="stat-label">Years operating</span><span class="stat-val">[XX]</span></div>
-        <div class="stat-row"><span class="stat-label">Institutional clients live</span><span class="stat-val">[XX]+</span></div>
-        <div class="stat-row"><span class="stat-label">Crypto assets supported</span><span class="stat-val">[XXX]+</span></div>
       </div>
     </div>
   </div>
